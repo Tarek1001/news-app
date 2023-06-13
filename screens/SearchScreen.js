@@ -1,5 +1,5 @@
-import React,{useEffect,useState} from 'react';
-import { Text, View, StyleSheet, SafeAreaView, ScrollView, FlatList } from 'react-native';
+import React,{useState} from 'react';
+import {StyleSheet, SafeAreaView, FlatList } from 'react-native';
 import SearchBar from '../components/SearchBar';
 import Article from '../components/Article';
 import axios from "axios";
@@ -27,8 +27,7 @@ const SearchScreen = () =>{
   });
     }
     return(
-        <SafeAreaView   style={styles.container}>
-       
+        <SafeAreaView   style={styles.container}>  
             <SearchBar searchText ={searchText} setSearchText={setSearchText} onSubmit={searchArticles}/>
             <FlatList
             data={articles}
@@ -44,17 +43,14 @@ const SearchScreen = () =>{
                 />}
             keyExtractor = {(item) => item.title}
         />
-
         </SafeAreaView>
     )
 }
 export default SearchScreen;
 
 const styles = StyleSheet.create({
-
-    container:{
-        flex:1,
-        backgroundColor:"#fff"
-    }
-
+  container:{
+    flex:1,
+    backgroundColor:"#fff"
+  }
 })

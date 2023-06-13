@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
   },
   source: {
     fontWeight: 'bold',
-    color: '#f3212d',
+    color: '#FF0000',
     marginTop: 10,
     padding: 10,
   },

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import RadioForm from 'react-native-simple-radio-button';
 import {Text, StyleSheet,SafeAreaView } from 'react-native';
 
@@ -11,6 +11,7 @@ const Category=(props)=> {
     { label: 'Business',  value: 'business' },
     { label: 'Entertainment', value: 'entertainment' },
   ]; 
+  
   
   return (
     <SafeAreaView >
@@ -55,4 +56,4 @@ const styles = StyleSheet.create({
     },
   buttonstyle:{ 
   }
-    });
+});

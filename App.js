@@ -26,15 +26,15 @@ export default function App() {
     <Stack.Screen name="Main" component=  {Main = () =>{
       return (
       <Tab.Navigator screenOptions={{
-        tabBarActiveTintColor: "red"
-    }}>
-        <Tab.Screen name="HomeScreen" component={HomeScreen} options={{
+        tabBarActiveTintColor: '#FF0000'
+        }}>
+        <Tab.Screen name="Home" component={HomeScreen} options={{
             tabBarIcon: () =><Entypo name="home" size={24} color="black" />
         }}/>
-        <Tab.Screen name="SearchScreen" component={SearchScreen} options={{
+        <Tab.Screen name="Search" component={SearchScreen} options={{
             tabBarIcon: () =><EvilIcons name="search" size={24} color="black" />
         }}/>
-        <Tab.Screen name="SettingsScreen" component={SettingsScreen} options={{
+        <Tab.Screen name="Settings" component={SettingsScreen} options={{
           tabBarIcon: () =><AntDesign name="setting" size={24} color="black" />
       }}/>
     </Tab.Navigator>
